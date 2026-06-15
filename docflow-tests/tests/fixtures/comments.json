@@ -1,0 +1,8 @@
+{
+  "_comment": "Sample comments attached to documents (referenced by document title for readability). Use when seeding so the comments-list test has data.",
+  "comments": [
+    { "documentTitle": "Project Proposal", "name": "Carol Approver", "text": "Please update the budget section before final approval." },
+    { "documentTitle": "Project Proposal", "name": "Dave Admin",     "text": "Document assigned to the department approver." },
+    { "documentTitle": "Remote Work Policy", "name": "Bob Approver", "text": "Clarify the in-office days requirement and resubmit." }
+  ]
+}

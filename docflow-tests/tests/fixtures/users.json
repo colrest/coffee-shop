@@ -1,0 +1,11 @@
+{
+  "_comment": "Seed these users into your TEST database before running the role-restricted suites (users, workflows, approvals). Passwords are plain here for convenience; your seed script should hash them the same way the app does. A freshly registered user is assumed to default to the 'Submitter' role.",
+  "password": "Test@1234",
+  "users": [
+    { "name": "Alice Submitter", "email": "submitter@test.com", "password": "Test@1234", "role": "Submitter" },
+    { "name": "Bob Approver",    "email": "approver1@test.com", "password": "Test@1234", "role": "Approver" },
+    { "name": "Carol Approver",  "email": "approver2@test.com", "password": "Test@1234", "role": "Approver" },
+    { "name": "Dave Admin",      "email": "admin@test.com",     "password": "Test@1234", "role": "Admin" },
+    { "name": "Eve Submitter",   "email": "submitter2@test.com","password": "Test@1234", "role": "Submitter" }
+  ]
+}

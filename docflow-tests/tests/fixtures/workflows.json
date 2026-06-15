@@ -1,0 +1,8 @@
+{
+  "_comment": "Workflow configurations. Each workflow routes a document through three stages: initial -> compliance -> final. Approver names/emails must match seeded Approver/Admin users.",
+  "workflows": [
+    { "name": "Project Proposal", "initial": "approver1@test.com", "compliance": "approver2@test.com", "final": "admin@test.com" },
+    { "name": "Budget Request",   "initial": "approver2@test.com", "compliance": "approver1@test.com", "final": "admin@test.com" },
+    { "name": "Policy Document",  "initial": "approver1@test.com", "compliance": "approver2@test.com", "final": "admin@test.com" }
+  ]
+}

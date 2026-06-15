@@ -1,0 +1,45 @@
+{
+  "_comment": "Sample documents in each status / stage. 'owner' must match a seeded submitter; 'category' and 'status' values match the API contract. Use these to seed your TEST database so list/detail/stats/approval tests have data to act on.",
+  "documents": [
+    {
+      "title": "Project Proposal",
+      "description": "Proposal for the new company project.",
+      "category": "Business",
+      "status": "Pending Approval",
+      "version": "v1",
+      "owner": "submitter@test.com",
+      "workflowType": "Project Proposal",
+      "currentStage": "Initial Level"
+    },
+    {
+      "title": "Q3 Budget Request",
+      "description": "Budget request for the third quarter.",
+      "category": "Finance",
+      "status": "Approved",
+      "version": "v2",
+      "owner": "submitter@test.com",
+      "workflowType": "Budget Request",
+      "currentStage": "Final Level"
+    },
+    {
+      "title": "Remote Work Policy",
+      "description": "Updated remote work policy document.",
+      "category": "Policy",
+      "status": "Revision Required",
+      "version": "v1",
+      "owner": "submitter@test.com",
+      "workflowType": "Policy Document",
+      "currentStage": "Initial Level"
+    },
+    {
+      "title": "Vendor Contract",
+      "description": "Contract with the new logistics vendor.",
+      "category": "Legal",
+      "status": "Rejected",
+      "version": "v1",
+      "owner": "submitter2@test.com",
+      "workflowType": "Project Proposal",
+      "currentStage": "Compliance Level"
+    }
+  ]
+}
