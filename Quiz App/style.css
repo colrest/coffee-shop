@@ -1,0 +1,145 @@
+/* ===== Basic reset so all browsers start the same way ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Styling for the whole page background and font ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eef2f7;
+  color: #222222;
+  /* These three lines center the quiz card on the screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 16px;
+}
+
+/* ===== The white card that holds all the quiz content ===== */
+.quiz-card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 600px;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Each "screen" is a section we show or hide ===== */
+.screen {
+  text-align: center;
+}
+
+/* ===== The hidden class removes a screen from view ===== */
+.hidden {
+  display: none;
+}
+
+/* ===== Headings and paragraphs get some breathing room ===== */
+h1 {
+  margin-bottom: 16px;
+  color: #1a3d6d;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+p {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+/* ===== The main blue buttons used across the app ===== */
+.main-button {
+  background-color: #1a73e8;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.main-button:hover {
+  background-color: #145cbf;
+}
+
+/* ===== The top bar inside the quiz screen ===== */
+.quiz-top-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #1a3d6d;
+}
+
+/* ===== The container that holds the four option buttons ===== */
+#options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ===== Each answer option button ===== */
+.option-button {
+  background-color: #f4f6f9;
+  border: 2px solid #cfd8e3;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.option-button:hover {
+  background-color: #e6ebf2;
+}
+
+/* ===== Green highlight for the correct answer ===== */
+.correct {
+  background-color: #d4f5dd;
+  border-color: #2e9e54;
+}
+
+/* ===== Red highlight for a wrong answer ===== */
+.wrong {
+  background-color: #fad6d6;
+  border-color: #d23a3a;
+}
+
+/* ===== The two buttons on the results screen sit side by side ===== */
+.results-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* ===== Each block in the review screen ===== */
+.review-item {
+  text-align: left;
+  border: 1px solid #cfd8e3;
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+.review-item .review-question {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* ===== Colored text to show picked vs correct answers ===== */
+.your-answer-correct {
+  color: #2e9e54;
+}
+
+.your-answer-wrong {
+  color: #d23a3a;
+}

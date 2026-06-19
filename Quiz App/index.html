@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- This tells the browser we are using HTML5 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- This meta tag makes the page responsive on phones and tablets -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Application</title>
+  <!-- Link to our separate CSS file that holds all the styling -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- The main box that holds everything in the middle of the screen -->
+  <div class="quiz-card">
+
+    <!-- SCREEN 1: The start screen the user sees first -->
+    <section id="start-screen" class="screen">
+      <h1>Welcome to the Quiz</h1>
+      <p>Answer each question before the timer runs out. Good luck!</p>
+      <button id="start-button" class="main-button">Start Quiz</button>
+    </section>
+
+    <!-- SCREEN 2: The screen that shows one question at a time -->
+    <section id="quiz-screen" class="screen hidden">
+
+      <!-- Top bar showing the question number and the countdown timer -->
+      <div class="quiz-top-bar">
+        <span id="question-counter">Question 1 of 5</span>
+        <span id="timer">Time: 15</span>
+      </div>
+
+      <!-- The text of the current question -->
+      <h2 id="question-text">Question goes here</h2>
+
+      <!-- The list of 4 answer buttons. JavaScript fills these in. -->
+      <div id="options-container"></div>
+
+    </section>
+
+    <!-- SCREEN 3: The results screen shown at the end -->
+    <section id="results-screen" class="screen hidden">
+      <h1>Quiz Finished!</h1>
+      <p id="score-text">You scored 0 out of 0</p>
+      <p id="percentage-text">Percentage: 0%</p>
+      <p id="pass-fail-text">Result</p>
+      <div class="results-buttons">
+        <button id="review-button" class="main-button">Review Answers</button>
+        <button id="restart-button" class="main-button">Restart Quiz</button>
+      </div>
+    </section>
+
+    <!-- SCREEN 4: The review screen (my individual enhancement) -->
+    <section id="review-screen" class="screen hidden">
+      <h1>Review Your Answers</h1>
+      <!-- JavaScript builds the review list inside this container -->
+      <div id="review-container"></div>
+      <button id="back-to-results-button" class="main-button">Back to Results</button>
+    </section>
+
+  </div>
+
+  <!-- Link to our separate JavaScript file at the very end so the HTML loads first -->
+  <script src="script.js"></script>
+</body>
+</html>
